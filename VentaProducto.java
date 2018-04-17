@@ -260,7 +260,12 @@ public class VentaProducto extends javax.swing.JFrame {
         
         modelo.addRow(columna);
         
-        //**
+        // Limpiar los campos
+        txtProducto.setText("");
+        txtCantidad.setText("");
+        txtValor.setText("");
+        txtProducto.requestFocus();
+
     }//GEN-LAST:event_btnAdicionarActionPerformed
 
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
