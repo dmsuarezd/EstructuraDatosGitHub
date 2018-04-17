@@ -133,7 +133,11 @@ public class InicioSesion extends javax.swing.JFrame {
             return;
         }
         
-        //**
+        //// Asigno los elementos gráficos a las variable
+        usuario = txtUsuario.getText();
+        char cadena[] = txtClave.getPassword();
+        clave = new String(cadena);
+
     }//GEN-LAST:event_btnInicioSesionActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
