@@ -137,6 +137,15 @@ public class InicioSesion extends javax.swing.JFrame {
         usuario = txtUsuario.getText();
         char cadena[] = txtClave.getPassword();
         clave = new String(cadena);
+        
+        if(usuario.equals("admin") && clave.equals("12345")){
+            // Abrir el formulario de ventas
+            VentaProducto obj = new VentaProducto();
+            obj.setVisible(true);
+            
+            this.setVisible(false);
+        }
+        else{
 
     }//GEN-LAST:event_btnInicioSesionActionPerformed
 
