@@ -146,6 +146,13 @@ public class InicioSesion extends javax.swing.JFrame {
             this.setVisible(false);
         }
         else{
+            // Muestro un mensaje de usuario y contraseña incorrectos
+            JOptionPane.showMessageDialog(null, "Usuario y contraseña incorrectos");
+            txtUsuario.setText("");
+            txtClave.setText("");
+        }
+
+        
 
     }//GEN-LAST:event_btnInicioSesionActionPerformed
 
