@@ -133,24 +133,7 @@ public class InicioSesion extends javax.swing.JFrame {
             return;
         }
         
-        // Asigno los elementos gráficos a las variable
-        usuario = txtUsuario.getText();
-        char cadena[] = txtClave.getPassword();
-        clave = new String(cadena);
-        
-        if(usuario.equals("admin") && clave.equals("12345")){
-            // Abrir el formulario de ventas
-            VentaProducto obj = new VentaProducto();
-            obj.setVisible(true);
-            
-            this.setVisible(false);
-        }
-        else{
-            // Muestro un mensaje de usuario y contraseña incorrectos
-            JOptionPane.showMessageDialog(null, "Usuario y contraseña incorrectos");
-            txtUsuario.setText("");
-            txtClave.setText("");
-        }
+        //**
     }//GEN-LAST:event_btnInicioSesionActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
