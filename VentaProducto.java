@@ -310,7 +310,14 @@ public class VentaProducto extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void txtCantidadKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCantidadKeyTyped
-        //****
+        // Validamos que solo ingrese numeros en el campo Cantidad
+        char validar=evt.getKeyChar();
+            if(Character.isLetter(validar)){
+            getToolkit().beep();
+            evt.consume();
+            JOptionPane.showMessageDialog(rootPane,"En el Campo Cantidad debe Ingresar solo Numeros");
+        }
+
     }//GEN-LAST:event_txtCantidadKeyTyped
 
     private void txtValorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtValorActionPerformed
